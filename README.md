@@ -1,21 +1,21 @@
-# OOS Projektni
-## Specifikacija aplikacije 
-Jednostavna <i>shell</i> aplikacija korisniku omogućava interakciju sa fajlsistemom. Ova aplikacija radi isljučivo na Linux operativnom sistemu i podržava sljedeće komande:
+# OOS Project - Faculty of Electrical Engineering, 2020
+## Application specification 
+A simple shell application that allows the user to interact with the file system. This application works exclusively on Linux operating systems and supports the following commands:
 
-* <b>login</b> - prijavljuje korisnika u aplikaciju i potom mu dodjeljuje odgovarajući direktorij. Sve sljedeće komande može unositi isključivo ulogovani korisnik.
+* <b>login</b> -  logs the user into the application and assigns the appropriate directory. Only the logged-in user can enter all subsequent commands.
 
-* <b>where</b> - prikazuje trenutnu lokaciju korisnika na fajlsistemu.
+* <b>where</b> - displays the user's current location on the file system.
 
-* <b>go</b> <i>putanja</i> - pozicionira korisnika na putanju naveden kao argument.
+* <b>go</b> <i>putanja</i> -positions the user on the path specified as an argument.
 
-* <b>create</b> [-d] <i>putanja</i> - na zadatoj putanji kreira datoteku, a ako se navede parametar -d, kreira folder.
+* <b>create</b> [-d] <i>path</i> - creates a file at the specified path, and if the -d parameter is specified, creates a folder.
 
-* <b>list</b> [<i>putanja</i>] - formatirano ispisuje stablo direktorijuma zadato kao argument, (tekućeg direktorijuma ako se ne navede argument).
+* <b>list</b> [<i>path</i>] - formats and displays the directory tree specified as an argument (current directory if no argument is specified).
 
-* <b>print</b> <i>datoteka</i> - ispisuje sadržaj tekstualne datoteke na konzolu. U slučaju navođenja netekstualne datoteke ispisuje se greška
+* <b>print</b> <i>file</i> - prints the contents of a text file to the console. If a non-text file is specified, an error is displayed.
 
-* <b>find</b> <i>"tekst" datoteka</i> - vraća broj linije na kojoj je pronađen zadati tekst u datoteci (prvo pojavljivanje teksta). Tekst je uvijek jednolinijski.
+* <b>find</b> <i>"text" file</i> -  returns the line number where the specified text is found in the file (first occurrence only). The text is always single-line.
 
-* <b>findDat</b> <i>datoteka putanja</i> - pretražuje datoteku u zadatoj putanji i kao izlaz vraća lokaciju iste.
+* <b>findDat</b> <i>file path</i> - searches for a file in the specified path and returns its location as output.
 
-* <b>logout</b> - odjavljuje korisnika sa aplikacije, te briše dodjeljeni folder.
+* <b>logout</b> - logs the user out of the application and deletes the assigned folder.
